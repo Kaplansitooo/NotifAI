@@ -16,6 +16,9 @@ import { useToast } from "@/hooks/use-toast";
 //google
 import { gapiInit, signIn } from "@/lib/google";
 
+// Declare gapi as a global variable
+declare const gapi: any;
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
